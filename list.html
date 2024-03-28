@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오리</title>
+<link rel="shortcut icon" type="image/x-icon" href="/imgs/타이틀이미지.jpg">
+<link rel="stylesheet" href="/list.css">
+</head>
+<body>
+<div class="container">
+    <p><span>오</span>늘의 <span>리</span>스트</p>
+    <div class="input-container">
+        <input type="text" id="itemInput" placeholder="추가할 리스트를 입력해주세요." onkeydown="if (event.keyCode === 13) addItem()">
+        <button onclick="addItem()">추가</button>
+        <button onclick="removeAllItems()">전체 삭제</button>
+    </div>
+    <ul id="itemList">
+        <!-- 리스트 추가되는곳 -->
+    </ul>
+</div>
+<script src="/list.js"></script>
+</body>
+</html>
